@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop| ARTCORNER</title>
+    <link rel = "icon" href = "images/logo2.png" type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #222831; */
+  background-color: #eeeeee;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #222831;
+}
+
+/* navBar */
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #eeeeee;
+  background-color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #222831;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 173, 181, 1);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 173, 181, 0.8);
+}
+.logo {
+  background-color: #222831;
+}
+.nav_links {
+  list-style: none;
+  background-color: #222831;
+}
+.nav_links li {
+  padding: 0px 20px;
+  display: inline-block;
+  background-color: #222831;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+/* Footer */
+
+body,
+html {
+  height: 100%;
+}
+
+.content-container {
+  min-height: 100%;
+}
+
+.footer {
+  background: rgba(0, 173, 181, 1);
+  color: #eeeeee;
+  height: 50px;
+  position: relative;
+}
+
+.footer .footer_bottom {
+  background: rgba(0, 173, 181, 0.8);
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  width: 100%;
+}
+    </style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo2.png" alt="logo" width="100px" class="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="">Cart</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </nav>
+        <!-- <a href="cta"><button>Contact</button></a> -->
+    </header>
+
+    <!-- Footer -->
+    <div class="footer">
+        <!-- <div class="footer-content">
+            <div class="footer-section about">
+                
+            </div>
+            <div class="footer-section contact"></div>
+            <div class="footer-section links"></div>
+    
+        </div> -->
+        <div class="footer_bottom">
+            &copy; ARTCORNER | Follow your HeArt
+        </div>
+    </div>
+</body>
+</html>

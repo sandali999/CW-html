@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop| ARTCORNER</title>
+    <link rel = "icon" href = "images/logo2.png" type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	
+	<!-- Stylesheets -->
+	<link href=".css" rel="stylesheet" type="text/css">
+    <link href="thumbnail.css" rel="stylesheet" type="text/css">
+	
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+   <body>
+    <header>
+        <img src="images/logo2.png" alt="logo" width="50px" class="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="">Cart</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </nav>
+        <!-- <a href="cta"><button>Contact</button></a> -->
+    </header>
+	
+
+    <!-- Functionality to increase/ Decrease font size -->
+    <button id="increase" class="changeFontSize" type="button">+</button>
+    <button id="medium" class="changeFontSize" type="button">medium </button>
+    <button id="decrease" class="changeFontSize" type="button">- </button>
+	
+<br/><br/>
+	
+	        <div class="txtcolor">
+              <label for="textcolor">Select Text colour</label>
+              <!-- calling function to change text colour -->
+              <select name="textcolor" id="textcolorselect" class="textcolor" onchange="textcolorChanger()">
+                  <option value="white">White</option>
+                  <option value="red">Red</option>
+                  <option value="blue" >Blue</option>
+                  <option value="#DE3163">Pink</option>
+				  <option value="#6495ED">light blue</option>
+				  <option value="#800000">Maroon</option>
+				  <option value="#bf00ff">Purple</option>
+				  
+              </select>
+			  
+			  
+          </div>
+          <div class="selectors">
+            <div class="bgcolor">
+                <label for="backgroundcolor">Select Background colour</label>
+                <!-- calling function to change background colour -->
+                <select id="colorselector" name="backgroundcolor" class="pickcolour" onchange="backgroundChanger() ">
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="#660000" >Dark Red</option>
+                        <option value="#990000">Olive</option>
+						<option value="#808080">Grey</option>
+						<option value="#70008f">Dark Purple</option>
+						<option value="#fc6961">Light Pink</option>
+                    </select>
+            </div>
+<body>
+
+<br/><br/>
+
+<p style="font-size:20px; font-family:Arial">Here let's take a look at what are the famous works done by David, Michelangelo and van Gogh</p>
+
+<br/><br/>
+
+<h2 style="text-align:center">Image Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="images/night.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="images/moses.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="images/blossom.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="images/david.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="images/pieta.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+<!-- calling function to change caption -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/night.jpeg" style="width:100% " onclick="currentSlide(1)" alt="The Starry Night is an oil on canvas painting by Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village.
+			   It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. Widely regarded as Van Gogh's magnum opus, The Starry Night is one of the most recognized paintings in Western ar">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/moses.jpeg" style="width:100% " onclick="currentSlide(2)" alt="The English translation of Sigmund Freud's 'The Moses of Michelangelo' also provides a basic description of the sculpture: 'The Moses of Michelangelo is represented as seated; his body faces forward, his head with its mighty beard looks to the left, his right foot rests on the ground, 
+	            and his left leg is raised so that ...">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/blossom.jpeg" style="width:100% " onclick="currentSlide(3)" alt="Almond Blossoms is a group of several paintings made in 1888 and 1890 by Vincent van Gogh in Arles and Saint-Rémy, southern France of blossoming almond trees. 
+				Flowering trees were special to van Gogh.They represented awakening and hope. He enjoyed them aesthetically and found joy in painting flowering trees.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/david.jpeg" style="width:100% " onclick="currentSlide(4)" alt="David is a masterpiece of Renaissance sculpture, created in marble between 1501 and 1504 by the Italian artist Michelangelo. David is a 5.17-metre (17 ft 0 in)marble statue of the Biblical figure David, 
+	                a favoured subject in the art of Florence.David was originally commissioned as one of a series of statues of prophets to be positioned along the roofline of the east end of Florence Cathedral, but was instead placed in a public square, outside the Palazzo Vecchio.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/pieta.jpg" style="width:108.5% " onclick="currentSlide(5)" alt="Pietà-The Pietà was a popular subject among northern european artists. 
+					It means Pity or Compassion, and represents Mary sorrowfully contemplating the dead body of her son which she holds on her lap.
+					This sculpture was commissioned by a French Cardinal living in Rome.
+                    Alongside David, Michelangelo’s work Pietà is considered one of the artist’s greatest works and certainly one of his best-known.">
+    </div>    
+  </div>
+</div>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+<!-- calling function to change the slides and captions-->
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var effect = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < effect.length; i++) {
+      effect[i].className = effect[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  effect[slideIndex-1].className += " active";
+  captionText.innerHTML = effect[slideIndex-1].alt;
+}
+
+ <!-- Script to increase/ Decrease font size -->
+        let buttons = document.getElementsByClassName("changeFontSize");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function (e) {
+                if (e.target.id == "increase")
+                    document.body.style.fontSize = "20px";
+                else if (e.target.id == "decrease")
+                    document.body.style.fontSize = "10px";
+                else if (e.target.id == "medium")
+                    document.body.style.fontSize = "15px";
+            })
+        }
+    
+
+
+      <!--function for changing background colour--> 
+      function backgroundChanger() {
+          var i = document.getElementById("colorselector").value;
+          document.body.style.background = i;
+      }
+      <!--function for changing text colour--> 
+      function textcolorChanger() {
+          var i = document.getElementById("textcolorselect").value;
+          document.body.parentElement.style.color = i;
+		  
+      }
+</script>
+
+<br><br>
+
+    <!-- Footer -->
+    <div class="footer">
+        <!-- <div class="footer-content">
+            <div class="footer-section about">
+                
+            </div>
+            <div class="footer-section contact"></div>
+            <div class="footer-section links"></div>
+    
+        </div> -->
+        <div class="footer_bottom">
+            &copy; ARTCORNER | Follow your HeArt
+        </div>
+    </div>
+</body>
+</html>
